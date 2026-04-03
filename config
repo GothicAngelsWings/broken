@@ -1,58 +1,40 @@
-/* The Veins of Gold: A Perfectly Broken Experience
-   Theme: Resilience, Memory, and the Beauty of the Break
-*/
-
-var multiConfig = {
-  "THISROOM": "veinsofgold",
-  "locationColor": "#b5a642", // Antique Brass
-  "locationBackground": "#1a1a1a", // Deep Slate
-  "currentView": "",
-  "viewList": [
-    "threshold",
-    "thelibrary",
-    "theloft",
-    "thegreenhouse"
-  ],
-  "defaultView": "threshold"
-};
-
-/* The "Kintsugi" Pulse Animations */
-var brassPulse = "<style>@keyframes bPulse {0%{box-shadow:0 0 5px #b5a642;} 50%{box-shadow:0 0 20px #b5a642; background:rgba(181,166,66,0.1);} 100%{box-shadow:0 0 5px #b5a642;}} .bHot:hover{animation:bPulse 1.8s infinite; border:1px solid #b5a642; border-radius:2px;}</style>";
-var ghostPulse = "<style>@keyframes gPulse {0%{opacity:0.6;} 50%{opacity:1; text-shadow:0 0 10px #fff;} 100%{opacity:0.6;}} .gHot:hover{animation:gPulse 2s infinite; cursor:help;}</style>";
-
 var roomstuff = {
   "rooms": {
 
     "threshold": {
       "rName": "The Threshold",
-      "backgroundImage": "https://www.transparenttextures.com/patterns/carbon-fibre.png",
-      "roomtop": brassPulse + "<center><div style='position:relative; border:1px solid #b5a642; overflow:hidden;'><img src='[INSERT_APARTMENT_IMAGE_URL]' style='width:100%; filter:sepia(20%);'><a href='?view=thelibrary' class='bHot' style='position:absolute; top:40%; left:40%; width:20%; height:30%; cursor:pointer;' title='Step Inside'></a><div style='position:absolute; bottom:0; width:100%; background:linear-gradient(transparent, rgba(0,0,0,0.8)); padding:20px;'><h1 style='color:#fff; font-family:serif; letter-spacing:8px; text-transform:uppercase; margin:0;'>The Veins of Gold</h1><p style='color:#b5a642; font-size:10px; letter-spacing:3px; margin-top:5px;'>PERFECTLY BROKEN | EST. 2026</p></div></div></center>",
-      "roombottom": "<div style='text-align:center; color:#b5a642; font-size:11px; line-height:1.8; letter-spacing:2px; margin-top:10px; border-top:1px solid #b5a642; padding:15px;'>Welcome to the architecture of survival. Here, perfection is found in the fracture. <br><b>NOTICE: WATCH YOUR STEP NEAR THE GLASS</b><hr style='border:0; border-top:1px solid #333; width:40%; margin:10px auto;'><span style='cursor:pointer; border:1px solid #b5a642; padding:5px 15px; font-size:9px; text-transform:uppercase;'>[ Read the Philosophy ]</span></div>",
-      "innerBGColor": "#0d0d0d", "color": "#b5a642"
+      "description": "The air here is cool and smells of rain-washed stone. A single pane of glass hangs in the frame, reflecting a world that no longer exists. It is the moment between what was and what will be.",
+      "backgroundImage": "https://www.transparenttextures.com/patterns/crackle-glaze.png",
+      "roomtop": brassPulse + "<center><div style='position:relative; border:1px solid #b5a642; overflow:hidden;'><img src='[INSERT_APARTMENT_IMAGE_URL]' style='width:100%;'><div style='position:absolute; bottom:0; width:100%; background:linear-gradient(transparent, rgba(0,0,0,0.8)); padding:20px;'><h1 style='color:#fff; font-family:serif; letter-spacing:8px; text-transform:uppercase; margin:0;'>The Veins of Gold</h1></div></div></center>",
+      "roombottom": "<div style='text-align:center; color:#b5a642; font-size:11px; line-height:1.8; letter-spacing:2px; margin-top:10px; border-top:1px solid #b5a642; padding:15px;'>Welcome to the architecture of survival. Here, perfection is found in the fracture. <br><hr style='border:0; border-top:1px solid #333; width:40%; margin:10px auto;'>[ DESC: " + this.description + " ]</div>",
+      "innerBGColor": "#1a1610", "color": "#b5a642"
     },
 
     "thelibrary": {
       "rName": "The Decaying Library",
-      "backgroundImage": "https://www.transparenttextures.com/patterns/paper-fibers.png",
-      "roomtop": ghostPulse + "<center><div style='position:relative; border:1px solid #555; overflow:hidden;'><img src='[INSERT_LIBRARY_IMAGE_URL]' style='width:100%; opacity:0.9;'><a href='?view=theloft' class='gHot' style='position:absolute; top:20%; right:10%; width:15%; height:40%;' title='Move Toward the Light'></a><div style='position:absolute; bottom:0; width:100%; background:linear-gradient(transparent, rgba(0,0,0,0.9)); padding:20px;'><h1 style='color:#ccc; font-family:serif; letter-spacing:4px; margin:0;'>The Archive of Silence</h1><p style='color:#888; font-size:10px; letter-spacing:2px;'>WHERE MEMORIES HOLD ON</p></div></div></center>",
-      "roombottom": "<div style='text-align:center; color:#aaa; font-size:12px; font-style:italic; line-height:1.6; margin-top:10px; border-top:1px double #444; padding:15px;'>\"The memories were here, though now gone, the structure still holds on.\" <br><span style='font-size:10px; color:#666;'>— Etched into the west wall</span><hr style='border:0; border-top:1px solid #333; width:50%; margin:10px auto;'><span style='cursor:pointer; border:1px solid #777; padding:5px 15px; font-size:10px; text-transform:uppercase;'>[ Open a Water-Stained Book ]</span></div>",
-      "innerBGColor": "#121212", "color": "#aaa"
+      "description": "The silence is heavy here, muffled by the weight of damp paper and centuries of stored thoughts. The only sound is the rhythmic drip of water hitting a marble floor—a clock made of leaks.",
+      "backgroundImage": "https://www.transparenttextures.com/patterns/pinstriped-suit.png",
+      "roomtop": ghostPulse + "<center><div style='position:relative; border:1px solid #555; overflow:hidden;'><img src='[INSERT_LIBRARY_IMAGE_URL]' style='width:100%; opacity:0.9;'><div style='position:absolute; bottom:0; width:100%; background:linear-gradient(transparent, rgba(0,0,0,0.9)); padding:20px;'><h1 style='color:#ccc; font-family:serif; letter-spacing:4px; margin:0;'>The Archive of Silence</h1></div></div></center>",
+      "roombottom": "<div style='text-align:center; color:#aaa; font-size:12px; font-style:italic; line-height:1.6; margin-top:10px; border-top:1px double #444; padding:15px;'>\"The memories were here, though now gone, the structure still holds on.\" <br><hr style='border:0; border-top:1px solid #333; width:50%; margin:10px auto;'>[ DESC: " + this.description + " ]</div>",
+      "innerBGColor": "#0f0f0f", "color": "#aaa"
     },
 
     "theloft": {
       "rName": "The Kintsugi Loft",
-      "backgroundImage": "https://www.transparenttextures.com/patterns/concrete-wall.png",
-      "roomtop": brassPulse + "<center><div style='position:relative; border:1px solid #b5a642; overflow:hidden;'><img src='[INSERT_LOFT_IMAGE_URL]' style='width:100%;'><a href='?view=thegreenhouse' class='bHot' style='position:absolute; top:30%; left:45%; width:10%; height:50%;' title='Follow the Brass Veins'></a><div style='position:absolute; bottom:0; width:100%; background:linear-gradient(transparent, rgba(0,0,0,0.8)); padding:20px;'><h1 style='color:#fff; font-family:sans-serif; font-weight:lighter; letter-spacing:10px; text-transform:uppercase; margin:0;'>Structural Resilience</h1><p style='color:#b5a642; font-size:10px; letter-spacing:3px;'>MENDING THE VOID</p></div></div></center>",
-      "roombottom": "<div style='text-align:center; color:#b5a642; font-size:11px; line-height:1.6; letter-spacing:1px; margin-top:10px; border-top:1px solid #b5a642; padding:15px;'>The crack in the pillar isn't a weakness; it's the strongest part of the room. Filled with brass, it stands as a testament to staying whole when gravity demands otherwise.<hr style='border:0; border-top:1px solid #333; width:50%; margin:10px auto;'><span style='cursor:pointer; border:1px solid #b5a642; padding:5px 15px; font-size:10px; text-transform:uppercase;'>[ Touch the Metal ]</span></div>",
-      "innerBGColor": "#1a1a1a", "color": "#b5a642"
+      "description": "A stark, modern sanctuary where the scars are louder than the walls. Sunlight catches the brass veins in the concrete, turning structural failure into a map of light. It feels solid. It feels permanent.",
+      "backgroundImage": "https://www.transparenttextures.com/patterns/dark-matter.png",
+      "roomtop": brassPulse + "<center><div style='position:relative; border:1px solid #b5a642; overflow:hidden;'><img src='[INSERT_LOFT_IMAGE_URL]' style='width:100%;'><div style='position:absolute; bottom:0; width:100%; background:linear-gradient(transparent, rgba(0,0,0,0.8)); padding:20px;'><h1 style='color:#fff; font-family:sans-serif; letter-spacing:10px; text-transform:uppercase; margin:0;'>Structural Resilience</h1></div></div></center>",
+      "roombottom": "<div style='text-align:center; color:#b5a642; font-size:11px; line-height:1.6; letter-spacing:1px; margin-top:10px; border-top:1px solid #b5a642; padding:15px;'>The crack in the pillar isn't a weakness; it's the strongest part of the room.<hr style='border:0; border-top:1px solid #333; width:50%; margin:10px auto;'>[ DESC: " + this.description + " ]</div>",
+      "innerBGColor": "#141414", "color": "#b5a642"
     },
 
     "thegreenhouse": {
       "rName": "The Botanical Sanctuary",
+      "description": "Humid, vibrant, and lawless. The smell of crushed fern and jasmine is overwhelming. Nature isn't destroying this room; it's wearing it like a suit of iron armor.",
       "backgroundImage": "https://www.transparenttextures.com/patterns/natural-paper.png",
-      "roomtop": brassPulse + "<center><div style='position:relative; border:1px solid #2d4d2d; overflow:hidden;'><img src='[INSERT_GREENHOUSE_IMAGE_URL]' style='width:100%;'><div style='position:absolute; bottom:0; width:100%; background:linear-gradient(transparent, rgba(0,50,0,0.7)); padding:20px;'><h1 style='color:#fff; font-family:serif; letter-spacing:5px; text-transform:uppercase; margin:0;'>The Final Surrender</h1><p style='color:#90ee90; font-size:10px; letter-spacing:2px;'>WHERE THE RUIN BLOOMS</p></div></div></center>",
-      "roombottom": "<div style='text-align:center; color:#90ee90; font-size:12px; line-height:1.6; letter-spacing:1px; margin-top:10px; border-top:1px solid #2d4d2d; padding:15px;'>Nature has woven the shattered glass back into a canopy. The structure holds on so that the life within can reach for the sun.<hr style='border:0; border-top:1px solid #2d4d2d; width:50%; margin:10px auto;'><span style='cursor:pointer; border:1px solid #90ee90; padding:5px 15px; font-size:10px; text-transform:uppercase;'>[ Leave a Seed ]</span></div>",
-      "innerBGColor": "#051005", "color": "#90ee90"
+      "roomtop": brassPulse + "<center><div style='position:relative; border:1px solid #2d4d2d; overflow:hidden;'><img src='[INSERT_GREENHOUSE_IMAGE_URL]' style='width:100%;'><div style='position:absolute; bottom:0; width:100%; background:linear-gradient(transparent, rgba(0,50,0,0.7)); padding:20px;'><h1 style='color:#fff; font-family:serif; letter-spacing:5px; text-transform:uppercase; margin:0;'>The Final Surrender</h1></div></div></center>",
+      "roombottom": "<div style='text-align:center; color:#90ee90; font-size:12px; line-height:1.6; letter-spacing:1px; margin-top:10px; border-top:1px solid #2d4d2d; padding:15px;'>Nature has woven the shattered glass back into a canopy.<hr style='border:0; border-top:1px solid #2d4d2d; width:50%; margin:10px auto;'>[ DESC: " + this.description + " ]</div>",
+      "innerBGColor": "#050a05", "color": "#90ee90"
     }
   }
 };
