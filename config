@@ -1,8 +1,3 @@
-/* THE VEINS OF GOLD: STABLE BUILD */
-
-var goldPulse = "<style>@keyframes gPulse {0%{box-shadow:0 0 5px #d4af37;} 50%{box-shadow:0 0 20px #d4af37; background:rgba(212,175,55,0.2);} 100%{box-shadow:0 0 5px #d4af37;}} .gHot:hover{animation:gPulse 1.5s infinite; border:1px solid #d4af37; border-radius:5px;}</style>";
-var brassPulse = "<style>@keyframes bPulse {0%{box-shadow:0 0 5px #b5a642;} 50%{box-shadow:0 0 20px #b5a642; background:rgba(181,166,66,0.1);} 100%{box-shadow:0 0 5px #b5a642;}} .bHot:hover{animation:bPulse 1.8s infinite; border:1px solid #b5a642; border-radius:2px;}</style>";
-
 var multiConfig = {
   "THISROOM": "veinsofgold",
   "locationColor": "#b5a642",
