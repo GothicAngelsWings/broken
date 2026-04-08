@@ -11,29 +11,55 @@ var room = {
     "threshold": {
       "rName": "The Threshold",
       "bg": "https://www.transparenttextures.com/patterns/crackle-glaze.png",
-      "top": "<div style='position:relative; border:1px solid #b5a642; overflow:hidden;'><img src='https://i.imgur.com/your-apartment-url.jpg' style='width:100%;'><a href='javascript:loadRoom(\"thelibrary\")' class='bHot' style='position:absolute; top:30%; left:35%; width:30%; height:40%;' title='Enter'></a><div style='position:absolute; bottom:0; width:100%; background:linear-gradient(transparent, rgba(0,0,0,0.9)); padding:20px;'><h1 style='color:#fff; font-family:serif; letter-spacing:8px; text-transform:uppercase; margin:0;'>The Veins of Gold</h1></div></div>",
+      "top": "<div style='position:relative; border:1px solid #b5a642; overflow:hidden;'><img src='https://i.imgur.com/placeholder1.jpg' style='width:100%;'><a href='javascript:loadRoom(\"thelibrary\")' class='bHot' style='position:absolute; top:30%; left:35%; width:30%; height:40%;' title='Enter'></a><div style='position:absolute; bottom:0; width:100%; background:linear-gradient(transparent, rgba(0,0,0,0.9)); padding:20px;'><h1 style='color:#fff; font-family:serif; letter-spacing:8px; text-transform:uppercase; margin:0;'>The Veins of Gold</h1></div></div>",
       "bottom": "<div style='color:#b5a642; font-size:12px; letter-spacing:1px;'>Welcome to the architecture of survival.<br><br><b>[ DESC: ]</b> The air here is cool and smells of rain-washed stone. A single pane of glass hangs in the frame.</div>",
-      "color": "#b5a642", "hex": "#1a1610"
+      "color": "#b5a642",
+      "hex": "#1a1610"
     },
+
     "thelibrary": {
       "rName": "The Decaying Library",
       "bg": "https://www.transparenttextures.com/patterns/pinstriped-suit.png",
-      "top": "<div style='position:relative; border:1px solid #555; overflow:hidden;'><img src='https://i.imgur.com/your-library-url.jpg' style='width:100%; opacity:0.8;'><a href='javascript:loadRoom(\"theloft\")' class='bHot' style='position:absolute; top:20%; right:10%; width:20%; height:50%;'></a><div style='position:absolute; bottom:0; width:100%; background:linear-gradient(transparent, rgba(0,0,0,0.9)); padding:20px;'><h1 style='color:#ccc; font-family:serif; letter-spacing:4px; margin:0;'>The Archive of Silence</h1></div></div>",
+      "top": "<div style='position:relative; border:1px solid #555; overflow:hidden;'><img src='https://i.imgur.com/placeholder2.jpg' style='width:100%; opacity:0.8;'><a href='javascript:loadRoom(\"theloft\")' class='bHot' style='position:absolute; top:20%; right:10%; width:20%; height:50%;'></a><div style='position:absolute; bottom:0; width:100%; background:linear-gradient(transparent, rgba(0,0,0,0.9)); padding:20px;'><h1 style='color:#ccc; font-family:serif; letter-spacing:4px; margin:0;'>The Archive of Silence</h1></div></div>",
       "bottom": "<div style='color:#aaa; font-size:12px; font-style:italic;'>\"The memories were here, though now gone...\"<br><br><b>[ DESC: ]</b> The silence is heavy here, muffled by the weight of damp paper.</div>",
-      "color": "#aaa", "hex": "#0f0f0f"
+      "color": "#aaa",
+      "hex": "#0f0f0f"
     },
+
     "theloft": {
       "rName": "The Kintsugi Loft",
       "bg": "https://www.transparenttextures.com/patterns/dark-matter.png",
-      "top": "<div style='position:relative; border:1px solid #b5a642; overflow:hidden;'><img src='https://i.imgur.com/your-loft-url.jpg' style='width:100%;'><a href='javascript:loadRoom(\"thegreenhouse\")' class='bHot' style='position:absolute; top:40%; left:45%; width:10%; height:40%;'></a><div style='position:absolute; bottom:0; width:100%; background:linear-gradient(transparent, rgba(0,0,0,0.8)); padding:20px;'><h1 style='color:#fff; font-family:sans-serif; letter-spacing:10px; margin:0;'>Structural Resilience</h1></div></div>",
+      "top": "<div style='position:relative; border:1px solid #b5a642; overflow:hidden;'><img src='https://i.imgur.com/placeholder3.jpg' style='width:100%;'><a href='javascript:loadRoom(\"thegreenhouse\")' class='bHot' style='position:absolute; top:40%; left:45%; width:10%; height:40%;'></a><div style='position:absolute; bottom:0; width:100%; background:linear-gradient(transparent, rgba(0,0,0,0.8)); padding:20px;'><h1 style='color:#fff; font-family:sans-serif; letter-spacing:10px; margin:0;'>Structural Resilience</h1></div></div>",
       "bottom": "<div style='color:#b5a642; font-size:12px;'>The crack in the pillar isn't a weakness.<br><br><b>[ DESC: ]</b> A stark sanctuary where the scars are louder than the walls.</div>",
-      "color": "#b5a642", "hex": "#141414"
+      "color": "#b5a642",
+      "hex": "#141414"
     },
+
     "thegreenhouse": {
       "rName": "The Botanical Sanctuary",
       "bg": "https://www.transparenttextures.com/patterns/natural-paper.png",
-      "top": "<div style='position:relative; border:1px solid #2d4d2d; overflow:hidden;'><img src='https://i.imgur.com/your-greenhouse-url.jpg' style='width:100%;'><div style='position:absolute; bottom:0; width:100%; background:linear-gradient(transparent, rgba(0,50,0,0.7)); padding:20px;'><h1 style='color:#fff; font-family:serif; letter-spacing:5px; margin:0;'>The Final Surrender</h1></div></div>",
+      "top": "<div style='position:relative; border:1px solid #2d4d2d; overflow:hidden;'><img src='https://i.imgur.com/placeholder4.jpg' style='width:100%;'><div style='position:absolute; bottom:0; width:100%; background:linear-gradient(transparent, rgba(0,50,0,0.7)); padding:20px;'><h1 style='color:#fff; font-family:serif; letter-spacing:5px; margin:0;'>The Final Surrender</h1></div></div>",
       "bottom": "<div style='color:#90ee90; font-size:12px;'>Nature has woven the shattered glass back into a canopy.<br><br><b>[ DESC: ]</b> Humid, vibrant, and lawless. Nature wearing iron armor.</div>",
-      "color": "#90ee90", "hex": "#050a05"
+      "color": "#90ee90",
+      "hex": "#050a05"
     }
+};
+
+function loadRoom(view) {
+  multiConfig.currentView = view;
+  
+  if(room[view]) {
+    document.querySelector("#roomTop").innerHTML = room[view].top;
+    document.querySelector("#roomBottom").innerHTML = room[view].bottom;
+    document.body.style.background = room[view].hex;
+  }
 }
+
+/* Optional but recommended */
+var style = document.createElement('style');
+style.innerHTML = `
+.bHot {
+  cursor: pointer;
+  display: block;
+}
+`;
