@@ -41,32 +41,4 @@ var room = {
       "bottom": "<div style='color:#90ee90; font-size:12px;'>Nature has woven the shattered glass back into a canopy.<br><br><b>[ DESC: ]</b> Humid, vibrant, and lawless. Nature wearing iron armor.</div>",
       "color": "#90ee90", "hex": "#050a05"
     }
-}; // <--- This closing bracket was missing!
-
-/* The function that actually updates the screen */
-function loadRoom(view) {
-  var data = room[view];
-  if(!data) return;
-
-  document.getElementById('roomtop').innerHTML = data.top;
-  document.getElementById('roombottom').innerHTML = data.bottom;
-  
-  var inner = document.getElementById('innerBackground');
-  if(inner) {
-      inner.style.backgroundImage = "url('" + data.bg + "')";
-      inner.style.backgroundColor = data.hex;
-      inner.style.color = data.color;
-  }
-  
-  var border = document.getElementById('borderBackground');
-  if(border) border.style.borderColor = data.color;
 }
-
-/* Force the load after the external scripts finish their 'wipe' */
-window.onload = function() {
-  setTimeout(function() {
-      var urlParams = new URLSearchParams(window.location.search);
-      var current = urlParams.get('view') || multi.defaultView;
-      loadRoom(current);
-  }, 1000); 
-};
