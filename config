@@ -7,11 +7,6 @@ var multiConfig = {
   "defaultView": "threshold"
 };
 
-var multi = {
-  "defaultView": "threshold",
-  "viewList": ["threshold", "thelibrary", "theloft", "thegreenhouse"]
-};
-
 var room = {
     "threshold": {
       "rName": "The Threshold",
